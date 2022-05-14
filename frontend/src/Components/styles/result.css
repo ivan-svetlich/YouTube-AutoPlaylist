@@ -1,0 +1,25 @@
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  height: 10px;
+  margin: 2em 1em 1em 1em;
+  transition: 1s;
+  color: white
+}
+
+#result.is-visible {
+  height: fit-content;
+  background-color: rgba(24, 24, 24, 0.7);
+  border: 1px solid #313131;
+  padding: 1em 2em 1em 2em;
+  color: white; 
+}
+
+.playlist-link {
+  margin-top: 0.5em;
+  color:#4d7af8;
+  text-decoration: none;
+}

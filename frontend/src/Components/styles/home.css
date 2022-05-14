@@ -1,0 +1,107 @@
+#draggable-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  height: 0;
+  margin: 2em 1em 1em 1em;
+  transition: 1s;
+  color: white
+}
+
+#draggable-div.is-visible {
+  height: fit-content;
+  background-color: rgba(24, 24, 24, 0.7);
+  border: 1px solid #313131;
+  padding: 1em 2em 2em 2em;
+  color: white; 
+}
+
+.form-title {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.option-text {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 1em;
+  text-align: left;
+  font: 18px "Delius", serif;
+  width: 100%;
+}
+
+.hint {
+  font-size: 14px;
+}
+
+.form-input {
+  border: 1px solid #313131;
+  background-color: #121212;
+  color: white;
+  font: 19px "Delius", serif;
+  width: 100%;
+  margin-top: 0.2em;
+  height: 2em;
+}
+
+.form-input:focus {
+  outline: 1px solid #4d7af8 !important;
+}
+
+.input-error {
+  outline: 1px solid #a02525 !important;
+}
+
+.msg {
+  margin-top: 0.5em;
+  color:rgb(160, 37, 37, 0);
+  font-size: smaller;
+}
+
+.error {
+  color:rgb(252, 66, 66);
+  font-size: smaller;
+}
+
+
+.button {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submit-btn {
+  color: #ffffff;
+  background-color: #313131;
+  border: 1px solid rgba(24, 24, 24, 0.5);
+  cursor: pointer;
+  font: 20px "Delius", serif;
+  padding: 0.3em;
+  height: 2em;
+  margin: 0 0 1em 0;
+}
+
+.submit-btn:active {
+  color: #313131;
+  background-color: #ffffff;
+}
+
+
+
+.new-user {
+  font-size: 16px;
+  margin-top: 2em;
+}
+
+.new-user a {
+  text-decoration: none;
+}
+
+.error {
+  width: fit-content;
+}
