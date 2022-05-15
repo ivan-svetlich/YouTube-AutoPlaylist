@@ -10,21 +10,40 @@ Create personalized YouTube playlists from your subscriptions feed based on your
 * [Technologies](#technologies)
 
 ## Setup
-1. Download and extract .ZIP
+Clone or download this repository.
 
-2. You need your own authorization credentials from Google to use the YouTube API. Follow this guide to register an app in Google Cloud Platform: 
-* https://developers.google.com/youtube/registering_an_application 
+### Backend
+1. You need your own authorization credentials from **Google** to use the [**YouTube API**](https://developers.google.com/youtube/v3). Follow this guide to register an app in **Google Cloud Platform**: 
+   * https://developers.google.com/youtube/registering_an_application 
 
-3. Open the project's folder, then credentials. Insert your API keys and OAuth 2.0 client secrets in the corresponding files.
+2. Insert your API keys and OAuth 2.0 client secrets in the corresponding files contained in **backend/credentials**.
 
-4. You need to have python and pip installed on your computer to run this code:
-  * Python: https://docs.python-guide.org/starting/installation/
-  * pip: https://pip.pypa.io/en/stable/installation/
+3. You need to have python and pip installed on your computer to run this code:
+   * Python: https://docs.python-guide.org/starting/installation/
+   * pip: https://pip.pypa.io/en/stable/installation/
 
-5. Open a terminal/command prompt, cd to the folder containing the autoplaylist.py file and run:
+4. Open a terminal/command prompt, cd to the **backend** folder and run:
 ```
 pip install -r requirements.txt
 ```
+
+5. To initialize the server run:
+```
+python -m main
+```
+### Frontend
+1. You need to have a package manager (like npm) installed on your computer to run this code:
+   * npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm/
+   
+2. Open a terminal/command prompt, cd to the **frontend** folder and run:
+```
+npm install
+```
+3. To initialize the app run:
+```
+npm start
+```
+
 ## Usage
 To create a playlist run:
 ```
