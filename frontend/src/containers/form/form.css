@@ -1,0 +1,28 @@
+.playlist-form {
+  background-color: inherit;
+  color: inherit;
+  width: fit-content;
+  padding: 2em;
+  opacity: 0.8;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.playlist-form .input-label {
+  text-align: left;
+}
+
+.playlist-form .hint {
+  font-size: 14px;
+}
+
+.playlist-form .submit-btn {
+  margin-top: 2em;
+  min-height: 3em;
+}
+
+.playlist-form #auth-link {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
