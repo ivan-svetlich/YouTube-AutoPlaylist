@@ -1,8 +1,9 @@
 #!/usr/bin/python
 
-import googleapiclient
 import os
 import traceback
+
+import googleapiclient
 from googleapiclient.discovery import build
 
 

@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 import secrets
-import string
 import traceback
+
 import flask
 import google.oauth2.credentials
 from flask import request, jsonify, session
 from flask_cors import cross_origin
+
 from appconfig import app, cache
 from authorization import initialize_flow, get_authorization_url
 from create_playlist import create_playlist
