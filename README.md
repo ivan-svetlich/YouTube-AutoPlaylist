@@ -61,7 +61,7 @@ npm start
 ### Main page
 
 #### Complete the filters with your preferences:
-<p align="center"><img height="500px" src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_1.png"/></p>
+<p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_1.png"/></p>
 
 ***
 
