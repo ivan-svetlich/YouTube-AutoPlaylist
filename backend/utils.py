@@ -6,10 +6,8 @@ import googleapiclient.errors
 from datetime import datetime, timedelta
 from dateutil import parser
 
-scopes = ["https://www.googleapis.com/auth/youtube.readonly"]
 
-
-def get_client():
+def get_discovery_client():
     # Disable OAuthlib's HTTPS verification when running locally.
     # *DO NOT* leave this option enabled in production.
     os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
@@ -26,9 +24,9 @@ def get_client():
     return youtube
 
 
-def get_videos_from_playlist(youtube, playlist_id, max_results):
+def get_videos_from_playlist(client, playlist_id, max_results):
     try:
-        request = youtube.playlistItems().list(
+        request = client.playlistItems().list(
             part="snippet",
             playlistId=playlist_id,
             maxResults=max_results
@@ -48,7 +46,7 @@ def get_video_ids(response, days, keyword):
     for item in items:
         published_date = parser.parse(item["snippet"]["publishedAt"]).date()
         if (limit_date is None) or (published_date >= limit_date):
-            if keyword in item["snippet"]["title"]:
+            if keyword.lower() in item["snippet"]["title"].lower():
                 print(item)
                 ids.append(item["snippet"]["resourceId"]["videoId"])
 
