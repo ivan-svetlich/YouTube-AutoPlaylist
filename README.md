@@ -56,9 +56,13 @@ npm start
 ```
 
 ## Usage
+
 ### Main page
+
 #### Complete the filters with your preferences:
 <p align="center"><img height="500px" src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_1.png"/></p>
+
+***
 
 ### OAuth consent
 #### Choose an account:
@@ -67,11 +71,16 @@ npm start
 #### Authorize YouTube AutoPlaylist to manage your YouTube account:
 <p align="center"><img height="500px" src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_3.png"/></p>
 
+***
+
 ### Search results
 #### If videos were found:
 <p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_6.png"/></p>
+
 #### You can find the new playlist in your YouTube library:
 <p align="center"><img height="500px" src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_8.png"/></p>
 
 #### If the search returned no results:
 <p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_7.png"/></p>
+
+***
