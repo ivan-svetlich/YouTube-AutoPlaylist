@@ -25,42 +25,43 @@ const ResultAlert = () => {
     <Paper className="result-container">
       {(!playlistId || playlistId === "") && (
         <Grid
-            container
-            spacing={0}
-            direction="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Alert variant="outlined" severity="error" className="result-alert">
-              No videos found that meet the requirements.
-            </Alert>
-            <Link to="/">
-              <Button variant="contained" color="primary">
-                Go back
-              </Button>
-            </Link>
-          </Grid>
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Alert variant="outlined" severity="error" className="result-alert">
+            No videos found that meet the requirements.
+          </Alert>
+          <Link to="/">
+            <Button variant="contained" color="primary">
+              Go back
+            </Button>
+          </Link>
+        </Grid>
       )}
       {playlistId && playlistId !== "" && (
-        
-          <Grid
-            container
-            spacing={0}
-            direction="column"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Alert variant="outlined" severity="success" className="result-alert">
-              Your playlist was created successfully!
-            </Alert>
-            <a target="_blank" rel="noreferrer"
+        <Grid
+          container
+          spacing={0}
+          direction="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Alert variant="outlined" severity="success" className="result-alert">
+            Your playlist was created successfully!
+          </Alert>
+          <a
+            target="_blank"
+            rel="noreferrer"
             href={`https://www.youtube.com/playlist?list=${playlistId}`}
           >
             <Button variant="contained" color="primary">
               Go to playlist
             </Button>
           </a>
-          </Grid>
+        </Grid>
       )}
     </Paper>
   );

@@ -1,13 +1,10 @@
-import { useEffect } from "react"
+import { useEffect } from "react";
 
 const AuthResult = () => {
   useEffect(() => {
-    window.postMessage("authorized", "*");
     window.close();
-  })
-  return (
-    <></>
-  )
-}
+  });
+  return <></>;
+};
 
-export default AuthResult
+export default AuthResult;

@@ -7,17 +7,12 @@ const AuthPage = () => {
 
   useEffect(() => {
     if (authUrl) {
-      console.log(authUrl)
+      console.log(authUrl);
       window.location.replace(decodeURIComponent(authUrl));
-    }
-    else {
-      //window.close();
-    }
-  }, [authUrl])
+    } 
+  }, [authUrl]);
 
-  return (
-    <></>
-  )
-}
+  return <></>;
+};
 
-export default AuthPage
+export default AuthPage;
