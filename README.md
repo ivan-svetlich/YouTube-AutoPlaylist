@@ -5,9 +5,20 @@ Create personalized YouTube playlists from your subscriptions feed based on your
 * Number of videos looked up per channel (e g. look up the last 10 videos from each channel)
 
 ## Table of contents
+* [Technologies](#technologies)
 * [Setup](#setup)
 * [Usage](#usage)
-* [Technologies](#technologies)
+
+## Technologies
+### Backend
+* Python 3.10.4
+* Flask 2.1.0
+* Redis server 5.0.3
+* Google API Client for Python 2.47.0
+### Frontend
+* TypeScript 4.6.4
+* React.js 18.1.0
+* Material UI 5.7.0
 
 ## Setup
 Clone or download this repository.
@@ -64,12 +75,3 @@ npm start
 
 #### If the search returned no results:
 <p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_7.png"/></p>
-
-## Technologies
-### This project was designed with:
-* Python 3.10.4
-* Flask 2.1.0
-* Google API Client for Python 2.47.0
-* TypeScript 4.6.4
-* React.js 18.1.0
-* Material UI
