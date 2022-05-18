@@ -83,5 +83,5 @@ npm start
 #### If the search returned no results:
 <p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_7.png"/></p>
 
-### Script version
+## Script version
 Take a look at the [script version](https://github.com/ivan-svetlich/youtube_autoplaylist) of this application. 
