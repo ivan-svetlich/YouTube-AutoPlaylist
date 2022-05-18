@@ -84,4 +84,4 @@ npm start
 <p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_7.png"/></p>
 
 ## Script version
-Take a look at the [script version](https://github.com/ivan-svetlich/youtube_autoplaylist) of this application. 
+Youtube AutoPlaylist is also a [Python script](https://github.com/ivan-svetlich/youtube_autoplaylist) that can be run locally from a terminal/command prompt. 
