@@ -79,7 +79,7 @@ npm start
 <p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_6.png"/></p>
 
 #### You can find the new playlist in your YouTube library:
-<p align="center"><img height="500px" src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_8.png"/></p>
+<p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_8.png"/></p>
 
 #### If the search returned no results:
 <p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_7.png"/></p>
