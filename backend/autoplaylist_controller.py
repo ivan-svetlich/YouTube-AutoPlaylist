@@ -36,8 +36,6 @@ def index():
         scopes=cached_credentials['scopes'])
 
     if credentials is None or credentials.expired or not credentials.valid:
-        auth_url, state = get_authorization_url(known_session)
-        cache.set(state, {})
         response = new_authorization_response(known_session)
         return jsonify(response), 200
 
@@ -52,9 +50,7 @@ def index():
 
     except google.auth.exceptions.RefreshError:
         traceback.print_exc()
-        auth_url, state = get_authorization_url(known_session)
-        cache.set(state, {})
-        response = {"authUrl": auth_url}
+        response = new_authorization_response(known_session)
         return jsonify(response), 200
 
     except Exception:
