@@ -5,9 +5,21 @@ Create personalized YouTube playlists from your subscriptions feed based on your
 * Number of videos looked up per channel (e g. look up the last 10 videos from each channel)
 
 ## Table of contents
+* [Technologies](#technologies)
 * [Setup](#setup)
 * [Usage](#usage)
-* [Technologies](#technologies)
+* [Script version](#script-version)
+
+## Technologies
+### Backend
+* Python 3.10.4
+* Flask 2.1.0
+* Redis server 5.0.3
+* Google API Client for Python 2.47.0
+### Frontend
+* TypeScript 4.6.4
+* React.js 18.1.0
+* Material UI 5.7.0
 
 ## Setup
 Clone or download this repository.
@@ -45,69 +57,33 @@ npm start
 ```
 
 ## Usage
-To create a playlist run:
-```
-python -m autoplaylist -d [DAYS] -k [KEYWORD] -r [RESULTS_PER_CHANNEL]
-```
-or
-```
-python -m autoplaylist --days [DAYS] --keyword [KEYWORD] --results [RESULTS_PER_CHANNEL]
-```
-When you run the command for the first time, a browser window will be opened and you'll be asked to authorize the app. Make sure your Google account is added to the 'Test Users' list in the Google Cloud Platform console.
 
-A YouTube playlist containing the videos that matched your preferences is created in your library.
+### Main page
 
-You can use the help command to learn more about the command's usage and syntax:
-```
-python -m autoplaylist --help
-```
+#### Complete the filters with your preferences:
+<p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_1.png"/></p>
 
-## Example
-Let's run the command using the default preferences:
-```
-python -m autoplaylist --days 0 --keyword 歌 --results 2
-```
-This command will search the last 2 uploads from each channel, looking for videos uploaded today that contain the word "歌" (song in Japanese). Because these are the default values, you can get the same result by simply running:
-```
-python -m autoplaylist
-```
-Feel free to modify the code to set different default values. 
+***
 
-If it's the first run, we need to complete the OAuth2 authorization. Bacause the app status is set to "Testing" in Google Cloud Platform, we'll see the following warning:
+### OAuth consent
+#### Choose an account:
+<p align="center"><img height="500px" src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_2.png"/></p>
 
-<p align="center"><img alt="warning" src="https://github.com/ivan-svetlich/youtube_autoplaylist/blob/master/images/autoplaylist_oauth_1.png"</p>
+#### Authorize YouTube AutoPlaylist to manage your YouTube account:
+<p align="center"><img height="500px" src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_3.png"/></p>
 
-After we click continue, we get the usual authorization screen:
+***
 
- <p align="center"><img alt="authorization" src="https://github.com/ivan-svetlich/youtube_autoplaylist/blob/master/images/autoplaylist_oauth_2.png"</p>
+### Search results
+#### If videos were found:
+<p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_6.png"/></p>
 
-This step won't be necesary next time you run the command. If you want to use a different Google account, just delete the ```autoplaylist.py-oauth2.json``` file and you'll be asked for authorization again.
+#### You can find the new playlist in your YouTube library:
+<p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_8.png"/></p>
 
-If everything goes well, we should see an output like this:
-```
-Authenticating....
-...
-Authentication successful.
-Searching playlists...
-Done. 159 playlists found.
-Searching videos...
-Done. 8 videos found.
-Creating new playlist...
-Done. New playlist: 歌 Auto Playlist (2022-05-03 10:00:30.668473)
-Adding videos to playlist...
-Done. 8 videos added to playlist.
-```
+#### If the search returned no results:
+<p align="center"><img src="https://github.com/ivan-svetlich/YouTube-AutoPlaylist/blob/master/images/youtube_autoplaylist_7.png"/></p>
 
-And we should find the new playlist in our YouTube library:
-
- <p align="center"><img alt="playlist" src="https://github.com/ivan-svetlich/youtube_autoplaylist/blob/master/images/autoplaylist_result.png"</p>
-
-## Technologies
-### This project was designed with:
-* Python 3
-
-#### Dependencies:
-<p><img src="https://avatars.githubusercontent.com/u/16785467?s=40&v=4" height="16px"></img> googleapis / google-api-python-client (~> 2.46.0)</p>
-<p><img src="https://avatars.githubusercontent.com/u/16785467?s=40&v=4" height="16px"></img> googleapis / oauth2client (4.1.3)</p>
-<p><img src="https://avatars.githubusercontent.com/u/17128733?s=40&v=4" height="16px"></img> httplib2 / httplib2 (~> 2.46.0)</p>
-<p><img src="https://avatars.githubusercontent.com/u/9849410?s=40&v=4" height="16px"></img> dateutil / dateutil python-dateutil (~> 2.8.2)</p>
+## Script version
+YouTube AutoPlaylist is also a Python script that can be run locally from a terminal/command prompt. Check it out: 
+  * **https://github.com/ivan-svetlich/youtube_autoplaylist**
